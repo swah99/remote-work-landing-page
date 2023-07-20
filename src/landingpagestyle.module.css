@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto Mono", monospace;
+  background: url("./image-hero-desktop.png");
+  background-size: 400px 517px;
+  background-repeat: no-repeat;
+  background-position: 786px 166px;
+}
+
+header {
+  /* display: grid;
+  grid-template-columns: repeat(40, 30px);
+  grid-template-rows: repeat(7, 30px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+h2 {
+  font-size: 40px;
+  grid-column: 3 / 7;
+  grid-row-start: 1;
+}
+.menuIcon,
+.closeIcon {
+  display: none;
+}
+.infoBar {
+  display: flex;
+  gap: 70px;
+
+  position: relative;
+}
+.menuToggle {
+  display: none;
+}
+.joinBar {
+  display: flex;
+  gap: 35px;
+
+  justify-content: center;
+  position: relative;
+}
+.reg {
+  background-color: transparent;
+  border: solid 0.5px;
+  height: 42px;
+  width: 100px;
+  border-radius: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+.reg:hover {
+  cursor: pointer;
+}
+.featuresDropDownList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -70px;
+  padding: 10px;
+  width: 150px;
+  background-color: white;
+  border-radius: 15px;
+}
+.listItem {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.listItem:hover {
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+.cal {
+  color: rgb(115, 170, 33);
+}
+.bull {
+  color: purple;
+  margin-left: -15px;
+}
+.bell {
+  color: rgb(201, 166, 51);
+}
+
+.companyDropDownList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 135px;
+  padding: 10px;
+  width: 150px;
+  background-color: white;
+  border-radius: 15px;
+  column-gap: 15px;
+}
+
+.lItem {
+  height: 30px;
+  width: 150px;
+}
+.lItem:hover {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  transform: translateX(8px);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.make {
+  font-size: 70px;
+  text-align: left;
+  margin-left: 255px;
+}
+.remo {
+  font-size: 70px;
+  text-align: left;
+  margin-left: 248px;
+  margin-top: -45px;
+}
+.bodyComp > p {
+  text-align: left;
+  margin-left: 255px;
+  margin-top: -15px;
+}
+.learn {
+  background-color: transparent;
+  border: solid 0.5px;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 255px;
+  cursor: pointer;
+}
+.attribution {
+  text-align: center;
+  margin-top: 120px;
+}
+.companyIcons {
+  display: flex;
+  gap: 40px;
+  margin-top: 70px;
+  margin-left: 240px;
+}
+@media (max-width: 425px) {
+  body {
+    background-color: whitesmoke;
+    font-family: "Roboto Mono", monospace;
+    background: url("./image-hero-mobile.png");
+    background-size: 400px 320px;
+    background-repeat: no-repeat;
+    background-position: 10px 116px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(7, 30px);
+  }
+
+  h2 {
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    top: -20px;
+  }
+  .make {
+    font-size: 70px;
+    text-align: left;
+    margin-left: 18px;
+    margin-top: -215px;
+  }
+  .remo {
+    font-size: 70px;
+    text-align: left;
+    margin-left: 11px;
+    margin-top: -71px;
+  }
+  .bodyComp > p {
+    text-align: left;
+    margin-left: 17px;
+    margin-top: -15px;
+  }
+  .learn {
+    background-color: transparent;
+    border: solid 0.5px;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 230px;
+    top: 0px;
+    padding-left: 20px;
+    width: 165px;
+    height: 100vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+
+  .menuIcon,
+  .closeIcon {
+    display: block;
+    position: absolute;
+    left: 355px;
+    z-index: 1;
+    top: 9px;
+    font-size: 20px;
+  }
+  .companyDropDown > h5,
+  .menuToggle > h5 {
+    margin-top: -50px;
+  }
+  .companyDropDownList {
+    left: 4px;
+    width: 130px;
+  }
+  .featuresDropDownList {
+    left: 9px;
+    width: 134px;
+  }
+  .reg {
+    margin-left: 0px;
+    margin-top: -35px;
+  }
+
+  .joinToggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 290px;
+    top: 280px;
+  }
+  .companyIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    margin-top: 62px;
+    margin-left: 20px;
+  }
+}
